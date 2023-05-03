@@ -1,6 +1,14 @@
 @import '../globalStyle/GlobalStyle.scss';
 @import '../globalStyle/variables.scss';
 
+//Text
+h1 {
+    font-family: $fontFamily-h1;
+}
+
+h2 {
+    font-family: $fontFamily-h2;
+}
 
 //Color boxes
 
@@ -39,11 +47,53 @@
     border-radius: 24px;
 }
 
+.bg-color-darkerGreen {
+    width: 100px;
+    height: 100px;
+    background-color: $color-darkerGreen;
+    border-radius: 24px;
+}
+
+.bg-color-darkGreen {
+    width: 100px;
+    height: 100px;
+    background-color: $color-darkGreen;
+    border-radius: 24px;
+}
+
+.bg-color-mediumGreen {
+    width: 100px;
+    height: 100px;
+    background-color: $color-mediumGreen;
+    border-radius: 24px;
+}
+
+.bg-color-lightGreen {
+    width: 100px;
+    height: 100px;
+    background-color: $color-lightGreen;
+    border-radius: 24px;
+}
+
+.bg-color-lighterGreen {
+    width: 100px;
+    height: 100px;
+    background-color: $color-lighterGreen;
+    border-radius: 24px;
+}
 
 //containers
+.colors__subcontainer {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+
+}
+
 .colors__container {
     display: flex;
     gap: 6px;
     justify-content: center;
+    flex-direction: column;
 
 }

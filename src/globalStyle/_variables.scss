@@ -16,3 +16,27 @@ $color-darkYellow:    #741FAD;
 $color-mediumYellow:  #A752E0;
 $color-lightYellow:   #D3A8F0;
 $color-lighterYellow: #E9D4F7;
+
+// Font family
+$font-primary:         'Roboto', sans-serif;
+$font-secondary:       'Oswald', sans-serif;
+
+
+// Font size
+$font-h1:         $fontFamily-secundary;
+$font-h2:         $fontFamily-primary;
+$font-h3:         $fontFamily-primary;
+$font-p:          $fontFamily-primary;
+
+// Font weights
+$fontFamily-bold:
+
+
+$font-medium: 1.2;
+
+@mixin font-size($font-size: $font-medium) {
+    font-size: $font-size;
+    @include mq(medium) {
+        font-size: $font-size *1.2;
+    }
+}
