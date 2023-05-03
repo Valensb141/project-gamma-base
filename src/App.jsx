@@ -17,8 +17,11 @@ function App() {
     <>
     <header>
       <h1>Proyecto Gamma</h1>
-      <Link to="/contact">Contacto</Link>
-      <Link to="/">Home</Link>
+
+      <div className='nav'>
+        <Link to="/contact">Contacto</Link>
+        <Link to="/">Home</Link>
+      </div>
     </header>
     <main>
       <Routes>

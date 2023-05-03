@@ -3,7 +3,8 @@ import './Styleguide.scss'
 
 // Tambn importar los componentes que se usarán
 import Nav from './components/Nav/Nav'
-import Btn from './components/btn/Btn'
+//import Btn from './components/btn/Btn'
+
 
 // 2. Crear la función 
 function Styleguide() {

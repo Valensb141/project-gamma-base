@@ -13,12 +13,27 @@ function Nav() {
         </div>
 
 
-        <div className="sg__nav">
+        
             
-            <link> <a href="">Colors</a> </link>
-            <link>Typography</link>
-            
-        </div>
+        <nav className="nav">
+
+            <ul className="nav__icon">
+
+                <li className="nav__list"> 
+                    <a href="">Colors</a>
+                </li>
+
+                <li className="nav__list"> 
+                    <a href="">Typography</a>
+                </li>
+
+                <li className="nav__list"> 
+                    <a href="">Icons</a>
+                </li>
+
+            </ul>
+
+        </nav>
 
     </>
 }
