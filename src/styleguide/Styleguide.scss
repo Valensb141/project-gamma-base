@@ -1,15 +1,6 @@
 @import '../globalStyle/GlobalStyle.scss';
 @import '../globalStyle/variables.scss';
 
-//Text
-h1 {
-    font-family: $fontFamily-h1;
-}
-
-h2 {
-    font-family: $fontFamily-h2;
-}
-
 //Color boxes
 
 .bg-color-darkerPurple {
@@ -95,5 +86,36 @@ h2 {
     gap: 6px;
     justify-content: center;
     flex-direction: column;
+    align-content: center;
+    padding: 24px;
 
+}
+
+//Typography
+
+h1 {
+    font-family: $font-secondary;
+    font-size: $font-extra-large;
+}
+
+h2 {
+    font-family: $font-secondary;
+    font-size: $font-large;
+    // font-weight: medium 500;
+}
+
+h3 {
+    font-family: $font-primary;
+    font-size: $font-large;
+    
+}
+
+h4 {
+    font-family: $font-primary;
+    font-size: $font-medium;
+}
+
+p {
+    font-family: $font-primary;
+    font-size: $font-medium;
 }

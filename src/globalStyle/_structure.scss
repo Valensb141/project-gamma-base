@@ -1,4 +1,15 @@
 .nav {
     display: flex;
     gap: 12px;
+    color: white;
+}
+
+.help__inner {
+    position: relative;
+    width: 88%;
+    margin: 0 auto;
+    background-color: #e0e1d1;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    padding: 0 3.4722222222vw calc(69.0277777778vw + 48px);
 }
