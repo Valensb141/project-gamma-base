@@ -1,39 +1,56 @@
 //Colores
-$color-darkerGreen:   #245214;
-$color-darkGreen:     #47A329;
-$color-mediumGreen:   #7AD65C;
-$color-lightGreen:    #ACE699;
-$color-lighterGreen:  #DEF5D6;
+$color-darkerGreen:    #245214;
+$color-darkGreen:      #47A329;
+$color-mediumGreen:    #7AD65C;
+$color-lightGreen:     #ACE699;
+$color-lighterGreen:   #DEF5D6;
 
-$color-darkerPurple:  #3A0F57;
-$color-darkPurple:    #741FAD;
-$color-mediumPurple:  #A752E0;
-$color-lightPurple:   #D3A8F0;
-$color-lighterPurple: #E9D4F7;
+$color-darkerPurple:   #3A0F57;
+$color-darkPurple:     #741FAD;
+$color-mediumPurple:   #A752E0;
+$color-lightPurple:    #D3A8F0;
+$color-lighterPurple:  #E9D4F7;
 
-$color-darkerYellow:  #3A0F57;
-$color-darkYellow:    #741FAD;
-$color-mediumYellow:  #A752E0;
-$color-lightYellow:   #D3A8F0;
-$color-lighterYellow: #E9D4F7;
+$color-darkerYellow:   #3A0F57;
+$color-darkYellow:     #741FAD;
+$color-mediumYellow:   #A752E0;
+$color-lightYellow:    #D3A8F0;
+$color-lighterYellow:  #E9D4F7;
 
 // Font family
-$font-primary:         'Roboto', sans-serif;
-$font-secondary:       'Oswald', sans-serif;
+$font-family-primary:   'Roboto', sans-serif;
+$font-family-secondary: 'Oswald', sans-serif;
+
+// Hs font families (primaria es la que se usa para todo lo general y la secundaria es para titulos o casos más particulares)
+$h1-font-family:         $font-family-secondary;
+$h2-font-family:         $font-family-primary;
+$h3-font-family:         $font-family-primary;
+$h4-font-family:         $font-family-primary;
 
 
-// Hs
-$font-h1:         $font-secondary;
-$font-h2:         $font-primary;
-$font-h3:         $font-primary;
-$font-p:          $font-primary;
+// General font sizes
+$font-size-extra-small:  1rem;
+$font-size-small:        1.25rem;
+$font-size-medium:       2rem;
+$font-size-x-medium:     2.25rem;
+$font-size-large:        3rem;
+$font-size-extra-large:  4rem;
 
-// Font size
-$font-extra-small: 1rem;
-$font-small: 1.25rem;
-$font-medium: 2rem;
-$font-large: 3rem;
-$font-extra-large: 6rem;
+// Hs font sizes (cambiar por los general font sizes o valores unicos para cada cosa)
+$h1-font-size:           $font-size-extra-large;
+$h2-font-size:           $font-size-large;
+$h3-font-size:           $font-size-x-medium;
+$h4font-size:            $font-size-medium;
+$h5-font-size:           $font-size-medium;
+$h6-font-size:           $font-size-medium;
+$p-font-size:            $font-size-medium;
+
+// Font weight (ver como hacer que funcione)
+$font-bold: bold;
+$font-medium: medium;
+$font-light: light;
+
+
 
 
 //@mixin font-size($font-size: $font-medium) {
