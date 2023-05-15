@@ -1,0 +1,12 @@
+.contact {
+ display: flex;
+ gap: $spacing-12;
+}
+
+.contact__img {
+ border-radius: 100%;
+ width: 40px;
+ height: 40px;
+ object-fit: cover;
+
+}
