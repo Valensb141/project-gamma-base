@@ -1,20 +1,26 @@
+import { useEffect } from 'react';
 import './Contact.scss'
 
 function Contact(props) {
+    // creamos variable (data) y la variable que usaremso para hacer cambios (setData)
+    let [data, setData] = useState([]);
 
-    console.log(props);
+    //Solicito la información Contactos
+    // Hooks: UseEffect (Hacer algo en concreto cuando cambie algo) y UseState(refresca la vista cuando cambie algo)
+    useEffect(() => {
+    fetch('/contacts.json')
+    .then(res => res.json())
+    .then(data => {
+        setData(info);
+    });
+    })
 
-    return <div className='contact'>
-        <div>
-            <img className='contact__img' src=( props.img ) alt="" />
-        </div>
-        <div>
-            {/* props.name lo que hace es llamar al dato que metamos cuando el componente esté en uso usando "name=""" */}
-            <strong>(props.name)</strong>
-            {/* props.icon lo que hace es llamar al dato que metamos cuando el componente esté en uso usando "icon=""" */}
-            <p className='contact__text'>(props.icon)</p>
-        </div>
+    // En este caso se usaría el UseState, queremos que se vuelva ejecutar nuestra funcion pero con los datos nuevos
+    return <div>
+        {/* el map se usará siempre que querramos usar un array para decirle al componente los datos que utilizará */}
+        {data.map(item => <Contact img={item.amg} name={item.name} icon={item.icon}/>)}
     </div>
+
 }
 
 export default Contact;
