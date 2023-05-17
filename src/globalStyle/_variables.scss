@@ -87,6 +87,10 @@ $font-medium: medium;
 $font-light: light;
 
 
+//grid
+$grid: 4;
+$grid-gap: 8px;
+$grid-margin: $gap;
 
 
 //@mixin font-size($font-size: $font-medium) {
