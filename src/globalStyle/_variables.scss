@@ -1,3 +1,4 @@
+
 //Colores
 $color-darkerGreen:    #245214;
 $color-darkGreen:      #47A329;
@@ -5,17 +6,52 @@ $color-mediumGreen:    #7AD65C;
 $color-lightGreen:     #ACE699;
 $color-lighterGreen:   #DEF5D6;
 
-$color-darkerPurple:   #3A0F57;
-$color-darkPurple:     #741FAD;
-$color-mediumPurple:   #A752E0;
-$color-lightPurple:    #D3A8F0;
-$color-lighterPurple:  #E9D4F7;
+$color-darkerBeige:   #3A0F57;
+$color-darkBeige:     #741FAD;
+$color-mediumBeige:   #A752E0;
+$color-lightBeige:    #D3A8F0;
+$color-lighterBeige:  #E9D4F7;
 
-$color-darkerYellow:   #3A0F57;
-$color-darkYellow:     #741FAD;
-$color-mediumYellow:   #A752E0;
-$color-lightYellow:    #D3A8F0;
-$color-lighterYellow:  #E9D4F7;
+$color-darkerMustard:   #3A0F57;
+$color-darkMustard:     #741FAD;
+$color-mediumMustard:   #A752E0;
+$color-lightMustard:    #D3A8F0;
+$color-lighterMustard:  #E9D4F7;
+
+
+// Se hace el mapa 
+$mapa-colores: (
+  "color-darkerGreen":    #245214,
+  "color-darkGreen":      #47A329,
+  "color-mediumGreen":    #7AD65C,
+  "color-lightGreen":     #ACE699,
+  "color-lighterGreen":   #DEF5D6,
+
+  "color-darkerBeige":   #3A0F57,
+  "color-darkBeige":     #741FAD,
+  "color-mediumBeige":   #A752E0,
+  "color-lightBeige":    #D3A8F0,
+  "color-lighterBeige":  #E9D4F7,
+  
+  "color-darkerMustard":   #3A0F57,
+  "color-darkMustard":     #741FAD,
+  "color-mediumMustard":   #A752E0,
+  "color-lightMustard":    #D3A8F0,
+  "color-lighterMustard":  #E9D4F7
+);
+
+// Esto es un loop para crear clases con cada color 
+// $color es un nombre arbitrario y $mapa-colores es el nombre que se le asignó al mapa 
+@each $color, $i in $mapa-colores {
+  .text-#{$color} {
+    color: $i;
+  }
+
+  .bg-color-#{$color} {
+    background-color: $i;
+  }
+}
+
 
 // Font family
 $font-family-primary:   'Roboto', sans-serif;
